@@ -1,0 +1,10 @@
+{
+  "name": "vis-js-examples",
+  "version": "1.0.0",
+  "description": "a collection of vis.js examples",
+  "main": "index.js",
+  "repository": "git@github.com:micahstubbs/vis-js-examples.git",
+  "author": "@micahstubbs <micah.stubbs@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
