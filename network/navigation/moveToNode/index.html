@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Network Move to Node</title>
+  <title>Network | Move to Node</title>
 
   <script type="text/javascript" src="exampleUtil.js"></script>
   <script type="text/javascript" src="vis.js"></script>
@@ -13,23 +13,29 @@
 </head>
 
 <body onload="draw();">
-  <h2>Move to Node</h2>
-  <form id='nodeIdForm'>
-    <div class="form-elements">
-      <label for="nodeId">nodeId</label>
-      <input type="text" id="nodeId" name="nodeId">
-      <div class="button">
-        <button type="submit">focus</button>
+  <div class="top">
+      <div class="top-left">
+        <form id='nodeIdForm'>
+          <div class="form-elements">
+            <label for="nodeId">nodeId</label>
+            <input type="text" id="nodeId" name="nodeId">
+            <div class="button">
+              <button type="submit">focus</button>
+            </div>
+          </div>
+        </form>
       </div>
-    </div>
-  </form>
-  <div class="right">
-    <div id="mynetwork"></div>
+      <div class="top-right">
+        <span id="statusUpdate"></span>
+      </div>
+  </div>
 
+  <div class="bottom">
+    <div id="mynetwork"></div>
     <p id="selection"></p>
     <p id="stabilization"></p>
   </div>
-  <span id="statusUpdate"></span><br />
+  
 </body>
 
 </html>

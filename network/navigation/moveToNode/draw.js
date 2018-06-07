@@ -3,7 +3,6 @@ var edges = null
 var network = null
 var offsetx,
   offsety,
-  scale,
   positionx,
   positiony,
   duration,
@@ -16,6 +15,7 @@ var finishMessage = ''
 var showInterval = false
 var showPhase = 1
 var amountOfNodes = 25
+const size = 20
 
 function destroy() {
   if (network !== null) {
@@ -40,6 +40,16 @@ function draw() {
     physics: {
       stabilization: {
         iterations: 1200
+      }
+    },
+    nodes: {
+      shape: 'circle',
+      widthConstraint: {
+        minimum: 40,
+        maximum: 40
+      },
+      font: {
+        size: 24
       }
     }
   }
@@ -79,7 +89,6 @@ function fitAnimated() {
 function doDefaultAnimation() {
   var options = {
     position: { x: positionx, y: positiony },
-    scale: scale,
     offset: { x: offsetx, y: offsety },
     animation: true // default duration is 1000ms and default easingFunction is easeInOutQuad.
   }
@@ -96,7 +105,6 @@ function focusNode(event) {
 
   var options = {
     // position: {x:positionx,y:positiony}, // this is not relevant when focusing on nodes
-    scale: scale,
     offset: { x: offsetx, y: offsety },
     animation: {
       duration: duration,

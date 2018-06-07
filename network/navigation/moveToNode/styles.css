@@ -1,21 +1,14 @@
 body {
   font: 10pt sans;
-}
-
-#mynetwork {
-  width: 600px;
-  height: 600px;
-  border: 1px solid lightgray;
-}
-
-div.left {
-  position: relative;
-  float: left;
-  width: 300px;
-  border: 1px #c7c7c7 solid;
-  height: 590px;
-  padding: 5px;
   display: flex;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 600px;
 }
 
 form {
@@ -40,13 +33,15 @@ button {
   margin-left: 10px;
 }
 
-div.right {
-  padding-left: 10px;
-  float: left;
-  width: 600px;
+.top-right {
+  margin: 10px;
 }
 
 div.bottom {
-  position: absolute;
-  bottom: 5px;
+}
+
+#mynetwork {
+  width: 600px;
+  height: 600px;
+  border: 1px solid lightgray;
 }
