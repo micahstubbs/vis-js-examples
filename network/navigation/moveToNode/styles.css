@@ -1,0 +1,52 @@
+body {
+  font: 10pt sans;
+}
+
+#mynetwork {
+  width: 600px;
+  height: 600px;
+  border: 1px solid lightgray;
+}
+
+div.left {
+  position: relative;
+  float: left;
+  width: 300px;
+  border: 1px #c7c7c7 solid;
+  height: 590px;
+  padding: 5px;
+  display: flex;
+}
+
+form {
+  margin: 10px;
+  display: flex;
+}
+
+div.form-elements {
+  display: flex;
+  flex-direction: row;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input {
+  max-width: 50px;
+}
+
+button {
+  margin-left: 10px;
+}
+
+div.right {
+  padding-left: 10px;
+  float: left;
+  width: 600px;
+}
+
+div.bottom {
+  position: absolute;
+  bottom: 5px;
+}
