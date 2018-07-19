@@ -103,6 +103,11 @@ function focusNode(event) {
 
   const nodeId = event.srcElement[0].value
 
+  console.log('easingFunction', easingFunction)
+  console.log('offsetx', offsetx)
+  console.log('offsety', offsety)
+  console.log('duration', duration)
+
   var options = {
     // position: {x:positionx,y:positiony}, // this is not relevant when focusing on nodes
     offset: { x: offsetx, y: offsety },
